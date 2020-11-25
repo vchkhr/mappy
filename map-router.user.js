@@ -14,7 +14,7 @@
 // @match           https://www.google.by/maps*
 // @match           https://www.google.kz/maps*
 // @match           https://www.mapillary.com/app*
-// @match           https://mapcreator.here.com/editor*
+// @match           https://mapcreator.here.com/*
 // @match           https://mpro.maps.yandex.ru/*
 // @match           https://n.maps.yandex.ru/*
 // @match           https://wego.here.com/?map=*
@@ -55,7 +55,7 @@
 			window.buttonsMarginTop = 20.4;
 			window.buttonsMarginRight = 119;
 		}
-	} else if (currentURL.indexOf("mapcreator.here.com/editor") >= 0) {
+	} else if (currentURL.indexOf("mapcreator.here.com") >= 0) {
 		window.currentService = "HEREMapCreator";
 		window.currentServiceType = "editor";
 		window.buttonsMarginTop = 14;
