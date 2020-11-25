@@ -14,7 +14,7 @@
 // @match           https://www.google.by/maps*
 // @match           https://www.google.kz/maps*
 // @match           https://www.mapillary.com/app*
-// @match           https://editor.here.com/editor/*
+// @match           https://mapcreator.here.com/editor/*
 // @match           https://mpro.maps.yandex.ru/*
 // @match           https://n.maps.yandex.ru/*
 // @match           https://wego.here.com/?map=*
