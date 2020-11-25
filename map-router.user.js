@@ -355,6 +355,8 @@
                 destinationURL = "https://maps.visicom.ua/c/" + destinationCoordY + "," + destinationCoordX + "," + destinationCoordZ + "/a/0,1,2,3,4,5,6,7?lang=ru";
             } else if (destinationService == "TwoGis") {
                 destinationURL = "https://2gis.ua/?m=" + destinationCoordY + "%2C" + destinationCoordX + "%2F" + destinationCoordZ;
+            } else if (destinationService == "Support") {
+                destinationURL = "https://github.com/vchkhr/map-router";
             } else {
                 console.log("Map Router - error - destination service unknown");
             }
