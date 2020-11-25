@@ -55,7 +55,7 @@
 			window.buttonsMarginTop = 20.4;
 			window.buttonsMarginRight = 119;
 		}
-	} else if (currentURL.indexOf("editor.here.com/editor") >= 0) {
+	} else if (currentURL.indexOf("mapcreator.here.com/editor") >= 0) {
 		window.currentService = "HEREMapCreator";
 		window.currentServiceType = "editor";
 		window.buttonsMarginTop = 14;
