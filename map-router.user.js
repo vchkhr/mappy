@@ -42,18 +42,18 @@
 		window.currentService = "YandexYedinaiaKarta";
 		window.currentServiceType = "editor";
 		window.buttonsMarginTop = 6.5;
-		window.buttonMarginRight = 48;
+		window.buttonsMarginRight = 48;
 	} else if (currentURL.indexOf("n.maps.yandex.ru") >= 0) {
 		window.currentService = "YandexNarodnaiaKarta";
 		window.currentServiceType = "editor";
 		window.buttonsMarginTop = 6.5;
-		window.buttonMarginRight = 48;
+		window.buttonsMarginRight = 48;
 	} else if (currentURL.indexOf("google") >= 0) {
 		if (currentURL.indexOf("/maps") >= 0) {
 			window.currentService = "GoogleMaps";
 			window.currentServiceType = "map";
 			window.buttonsMarginTop = 20.4;
-			window.buttonMarginRight = 119;
+			window.buttonsMarginRight = 119;
 		}
 	} else if (currentURL.indexOf("editor.here.com/editor") >= 0) {
 		window.currentService = "HEREMapCreator";
@@ -64,7 +64,7 @@
 		window.currentServiceType = "unknown";
 	}
 
-	console.log("Map Router - info - current service: " + currentService + "; current servie type: " + currentServiceType + "; buttonns margin top: " + buttonsMarginTop + "; button margin right: " + buttonMarginRight + "; button margin left: " + buttonsMarginLeft);
+	console.log("Map Router - info - current service: " + currentService + "; current servie type: " + currentServiceType + "; buttonns margin top: " + buttonsMarginTop + "; button margin right: " + buttonsMarginRight + "; button margin left: " + buttonsMarginLeft);
 
 	if (currentServiceType == "unknown") {
 		console.log("Map Router - error - not supported service");
@@ -153,61 +153,61 @@
 
 			if (currentService == "YandexYedinaiaKarta") {
 				buttonSupport.style.cssText = buttonsStyle;
-				buttonSupport.style.right = buttonMarginRight + 0 + "px";
+				buttonSupport.style.right = buttonsMarginRight + 0 + "px";
 
 				buttonYandexNarodnaiaKarta.style.cssText = buttonsStyle;
-				buttonYandexNarodnaiaKarta.style.right = buttonMarginRight + 30 + "px";
+				buttonYandexNarodnaiaKarta.style.right = buttonsMarginRight + 30 + "px";
 
 				buttonHEREMapCreator.style.cssText = buttonsStyle;
-				buttonHEREMapCreator.style.right = buttonMarginRight + 60 + "px";
+				buttonHEREMapCreator.style.right = buttonsMarginRight + 60 + "px";
 
 				buttonTwoGis.style.cssText = buttonsStyle;
-				buttonTwoGis.style.right = buttonMarginRight + 90 + "px";
+				buttonTwoGis.style.right = buttonsMarginRight + 90 + "px";
 
 				buttonVisicom.style.cssText = buttonsStyle;
-				buttonVisicom.style.right = buttonMarginRight + 120 + "px";
+				buttonVisicom.style.right = buttonsMarginRight + 120 + "px";
 
 				buttonYandexKarty.style.cssText = buttonsStyle;
-				buttonYandexKarty.style.right = buttonMarginRight + 150 + "px";
+				buttonYandexKarty.style.right = buttonsMarginRight + 150 + "px";
 
 				buttonMapillary.style.cssText = buttonsStyle;
-				buttonMapillary.style.right = buttonMarginRight + 180 + "px";
+				buttonMapillary.style.right = buttonsMarginRight + 180 + "px";
 
 				buttonHEREWeGo.style.cssText = buttonsStyle;
-				buttonHEREWeGo.style.right = buttonMarginRight + 210 + "px";
+				buttonHEREWeGo.style.right = buttonsMarginRight + 210 + "px";
 
 				buttonGoogleStreetView.style.cssText = buttonsStyle;
-				buttonGoogleStreetView.style.right = buttonMarginRight + 240 + "px";
+				buttonGoogleStreetView.style.right = buttonsMarginRight + 240 + "px";
 
 				buttonGoogleMaps.style.cssText = buttonsStyle;
-				buttonGoogleMaps.style.right = buttonMarginRight + 270 + "px";
+				buttonGoogleMaps.style.right = buttonsMarginRight + 270 + "px";
 			} else if (currentService == "GoogleMaps") {
 				buttonSupport.style.cssText = buttonsStyle;
-				buttonSupport.style.right = buttonMarginRight + 0 + "px";
+				buttonSupport.style.right = buttonsMarginRight + 0 + "px";
 
 				buttonYandexYedinaiaKarta.style.cssText = buttonsStyle;
-				buttonYandexYedinaiaKarta.style.right = buttonMarginRight + 30 + "px";
+				buttonYandexYedinaiaKarta.style.right = buttonsMarginRight + 30 + "px";
 
 				buttonYandexNarodnaiaKarta.style.cssText = buttonsStyle;
-				buttonYandexNarodnaiaKarta.style.right = buttonMarginRight + 60 + "px";
+				buttonYandexNarodnaiaKarta.style.right = buttonsMarginRight + 60 + "px";
 
 				buttonHEREMapCreator.style.cssText = buttonsStyle;
-				buttonHEREMapCreator.style.right = buttonMarginRight + 90 + "px";
+				buttonHEREMapCreator.style.right = buttonsMarginRight + 90 + "px";
 
 				buttonTwoGis.style.cssText = buttonsStyle;
-				buttonTwoGis.style.right = buttonMarginRight + 120 + "px";
+				buttonTwoGis.style.right = buttonsMarginRight + 120 + "px";
 
 				buttonVisicom.style.cssText = buttonsStyle;
-				buttonVisicom.style.right = buttonMarginRight + 150 + "px";
+				buttonVisicom.style.right = buttonsMarginRight + 150 + "px";
 
 				buttonYandexKarty.style.cssText = buttonsStyle;
-				buttonYandexKarty.style.right = buttonMarginRight + 180 + "px";
+				buttonYandexKarty.style.right = buttonsMarginRight + 180 + "px";
 
 				buttonMapillary.style.cssText = buttonsStyle;
-				buttonMapillary.style.right = buttonMarginRight + 210 + "px";
+				buttonMapillary.style.right = buttonsMarginRight + 210 + "px";
 
 				buttonHEREWeGo.style.cssText = buttonsStyle;
-				buttonHEREWeGo.style.right = buttonMarginRight + 240 + "px";
+				buttonHEREWeGo.style.right = buttonsMarginRight + 240 + "px";
 			} else if (currentService == "HEREMapCreator") {
 				buttonSupport.style.cssText = buttonsStyle;
 				buttonSupport.style.left = buttonMarginLeft + 270 + "px";
