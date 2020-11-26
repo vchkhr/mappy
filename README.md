@@ -3,7 +3,7 @@ With Map Router you can switch from one map service to another with just one cli
 
 ![Map Router Demo](https://raw.githubusercontent.com/vchkhr/map-router/main/img/demo.gif)
 
-Check driving directions, road surfaces and building types from one service to another with the click of a button - right in your browser.\
+Check driving directions, road surfaces and building types from one service to another with the click of a button — right in your browser.\
 Map Router is always available in the upper left or right corner in the editors and maps you need.
 
 ## How to Install
@@ -12,10 +12,10 @@ Required:
 2. Install [Map Router](https://raw.githubusercontent.com/vchkhr/map-router/main/map-router.user.js) script.
 
 Recommended:
-1. Open Tampermonkey's settings and change Script Update time every to 6 hours.
+1. Open Tampermonkey's settings and change Script Update time to every 6 hours.
 
 ## How to Use
-Now open one of supported sites and you will see buttons with logos of services, where you can go.
+Open one of [supported services](#supported-services) and you will see buttons with logos of services, where you can go to.
 
 ## Supported Services
 Where can you go from:
