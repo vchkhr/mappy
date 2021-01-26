@@ -36,8 +36,6 @@ Where can you go to:
 * Яндекс.Народная карта
 * Яндекс.Единая карта
 
-## Feedback
-Feedback is always welcome at [GitHub Issues](https://github.com/vchkhr/map-router/issues).
-
-## Support
-<a href="https://www.buymeacoffee.com/vchkhr" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>
+## Feedback and Donations
+Feedback is always welcome at [GitHub Issues](https://github.com/vchkhr/map-router/issues).\
+You can donate to this project using [Patreon](https://patreon.com/vchkhr).
