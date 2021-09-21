@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            MAPPY
 // @namespace       https://github.com/vchkhr/mappy/
-// @version         1.0
+// @version         1.1
 // @author          vchkhr
 // @description     With MAPPY you can switch from one map service to another with just one click
 // @icon            https://raw.githubusercontent.com/vchkhr/mappy/main/img/logo.png
