@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name            Map Router
-// @namespace       https://github.com/vchkhr/map-router/
+// @name            MAPPY
+// @namespace       https://github.com/vchkhr/mappy/
 // @version         1.0
 // @author          vchkhr
-// @description     With Map Router you can switch from one map service to another with just one click
-// @icon            https://raw.githubusercontent.com/vchkhr/map-router/main/img/logo.png
-// @updateURL       https://raw.githubusercontent.com/vchkhr/map-router/main/map-router.user.js
-// @downloadURL     https://raw.githubusercontent.com/vchkhr/map-router/main/map-router.user.js
+// @description     With MAPPY you can switch from one map service to another with just one click
+// @icon            https://raw.githubusercontent.com/vchkhr/mappy/main/img/logo.png
+// @updateURL       https://raw.githubusercontent.com/vchkhr/mappy/main/mappy.user.js
+// @downloadURL     https://raw.githubusercontent.com/vchkhr/mappy/main/mappy.user.js
 // @match           https://www.google.com/maps*
 // @match           https://www.google.com.ua/maps*
 // @match           https://www.google.ua/maps*
@@ -29,7 +29,7 @@
 (function() {
 	'use strict';
 	window.mapRouterVersion = 1.0;
-	console.log("Map Router - info - version: " + mapRouterVersion);
+	console.log("MAPPY - info - version: " + mapRouterVersion);
 
 	window.currentURL = window.location.href;
 	window.currentService = "";
@@ -64,86 +64,86 @@
 		window.currentServiceType = "unknown";
 	}
 
-	console.log("Map Router - info - current service: " + currentService + "; current servie type: " + currentServiceType + "; buttonns margin top: " + buttonsMarginTop + "; button margin right: " + buttonsMarginRight + "; button margin left: " + buttonsMarginLeft);
+	console.log("MAPPY - info - current service: " + currentService + "; current servie type: " + currentServiceType + "; buttonns margin top: " + buttonsMarginTop + "; button margin right: " + buttonsMarginRight + "; button margin left: " + buttonsMarginLeft);
 
 	if (currentServiceType == "unknown") {
-		console.log("Map Router - error - not supported service");
+		console.log("MAPPY - error - not supported service");
 	} else {
 		var buttonsStyle = "position: absolute; top: " + buttonsMarginTop + "px; z-index: 999999999; height: 20px; cursor: pointer; border: 0px; border-radius: 3px;";
-		var buttonAlt = "Map Router - open in ";
+		var buttonAlt = "MAPPY - open in ";
 
 		var buttonGoogleMaps = document.createElement("img");
-		buttonGoogleMaps.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/GoogleMaps.png";
+		buttonGoogleMaps.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/GoogleMaps.png";
 		buttonGoogleMaps.title = buttonAlt + "Google Maps";
 		buttonGoogleMaps.style.cssText = "display: none;";
 		buttonGoogleMaps.onclick = redirectGoogleMaps;
 		document.body.appendChild(buttonGoogleMaps);
 
 		var buttonGoogleStreetView = document.createElement("img");
-		buttonGoogleStreetView.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/GoogleStreetView.png";
+		buttonGoogleStreetView.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/GoogleStreetView.png";
 		buttonGoogleStreetView.title = buttonAlt + "Google Street View";
 		buttonGoogleStreetView.style.cssText = "display: none;";
 		buttonGoogleStreetView.onclick = redirectGoogleStreetView;
 		document.body.appendChild(buttonGoogleStreetView);
 
 		var buttonHEREWeGo = document.createElement("img");
-		buttonHEREWeGo.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/HEREWeGo.png";
+		buttonHEREWeGo.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/HEREWeGo.png";
 		buttonHEREWeGo.title = buttonAlt + "HERE WeGo";
 		buttonHEREWeGo.style.cssText = "display: none;";
 		buttonHEREWeGo.onclick = redirectHEREWeGo;
 		document.body.appendChild(buttonHEREWeGo);
 
 		var buttonMapillary = document.createElement("img");
-		buttonMapillary.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/Mapillary.png";
+		buttonMapillary.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/Mapillary.png";
 		buttonMapillary.title = buttonAlt + "Mapillary";
 		buttonMapillary.style.cssText = "display: none;";
 		buttonMapillary.onclick = redirectMapillary;
 		document.body.appendChild(buttonMapillary);
 
 		var buttonYandexKarty = document.createElement("img");
-		buttonYandexKarty.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/YandexKarty.png";
+		buttonYandexKarty.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/YandexKarty.png";
 		buttonYandexKarty.title = buttonAlt + "Яндекс.Карты";
 		buttonYandexKarty.style.cssText = "display: none;";
 		buttonYandexKarty.onclick = redirectYandexKarty;
 		document.body.appendChild(buttonYandexKarty);
 
 		var buttonVisicom = document.createElement("img");
-		buttonVisicom.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/Visicom.png";
+		buttonVisicom.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/Visicom.png";
 		buttonVisicom.title = buttonAlt + "Визиком";
 		buttonVisicom.style.cssText = "display: none;";
 		buttonVisicom.onclick = redirectVisicom;
 		document.body.appendChild(buttonVisicom);
 
 		var buttonTwoGis = document.createElement("img");
-		buttonTwoGis.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/TwoGis.png";
+		buttonTwoGis.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/TwoGis.png";
 		buttonTwoGis.title = buttonAlt + "2GIS";
 		buttonTwoGis.style.cssText = "display: none;";
 		buttonTwoGis.onclick = redirectTwoGis;
 		document.body.appendChild(buttonTwoGis);
 
 		var buttonHEREMapCreator = document.createElement("img");
-		buttonHEREMapCreator.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/HEREMapCreator.png";
+		buttonHEREMapCreator.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/HEREMapCreator.png";
 		buttonHEREMapCreator.title = buttonAlt + "HERE Map Creator";
 		buttonHEREMapCreator.style.cssText = "display: none;";
 		buttonHEREMapCreator.onclick = redirectHEREMapCreator;
 		document.body.appendChild(buttonHEREMapCreator);
 
 		var buttonYandexNarodnaiaKarta = document.createElement("img");
-		buttonYandexNarodnaiaKarta.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/YandexNarodnaiaKarta.png";
+		buttonYandexNarodnaiaKarta.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/YandexNarodnaiaKarta.png";
 		buttonYandexNarodnaiaKarta.title = buttonAlt + "Яндекс.Народня Карта";
 		buttonYandexNarodnaiaKarta.style.cssText = "display: none;";
 		buttonYandexNarodnaiaKarta.onclick = redirectYandexNarodnaiaKarta;
 		document.body.appendChild(buttonYandexNarodnaiaKarta);
 
 		var buttonYandexYedinaiaKarta = document.createElement("img");
-		buttonYandexYedinaiaKarta.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/YandexYedinaiaKarta.png";
+		buttonYandexYedinaiaKarta.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/YandexYedinaiaKarta.png";
 		buttonYandexYedinaiaKarta.title = buttonAlt + "Яндекс.Единая Карта";
 		buttonYandexYedinaiaKarta.style.cssText = "display: none;";
 		buttonYandexYedinaiaKarta.onclick = redirectYandexYedinaiaKarta;
 		document.body.appendChild(buttonYandexYedinaiaKarta);
 
 		var buttonSupport = document.createElement("img");
-		buttonSupport.src = "https://raw.githubusercontent.com/vchkhr/map-router/main/img/services/Support.png";
+		buttonSupport.src = "https://raw.githubusercontent.com/vchkhr/mappy/main/img/services/Support.png";
 		buttonSupport.title = "Get help";
 		buttonSupport.style.cssText = "display: none;";
 		buttonSupport.onclick = redirectSupport;
@@ -243,10 +243,10 @@
 		},2000)
 
 		function redirect() {
-			console.log("Map Router - info - destination service: " + destinationService);
+			console.log("MAPPY - info - destination service: " + destinationService);
 
             if (currentService == "YandexYedinaiaKarta") {
-                console.log("Map Router - info - getting coordinates");
+                console.log("MAPPY - info - getting coordinates");
                 window.currentURL = window.location.href;
                 var coord1 = currentURL.split("?ll=");
                 var coord2 = coord1[1];
@@ -259,14 +259,14 @@
                 window.destinationCoordX = coord7[1];
                 window.destinationCoordY = coord7[0];
             } else if (currentService == "GoogleMaps") {
-                console.log("Map Router - info - getting coordinates");
+                console.log("MAPPY - info - getting coordinates");
                 window.currentURL = window.location.href;
                 var coord1 = currentURL.split("maps/@");
                 var coord2 = coord1[1];
                 var coord3 = coord2.split("/");
                 var coord4 = coord3[0];
                 if (coord4.indexOf("m") >= 0) {
-                    console.log("Map Router - info - Google Maps opened not in StreetView");
+                    console.log("MAPPY - info - Google Maps opened not in StreetView");
                     var coord5 = coord4.split("m");
                     var coord6 = coord5[0];
                     var coord7 = coord6.split(",");
@@ -274,14 +274,14 @@
                     window.destinationCoordY = coord7[1];
                     window.destinationCoordZ = coord7[2];
                 } else {
-                    console.log("Map Router - info - Google Maps opened in StreetView");
+                    console.log("MAPPY - info - Google Maps opened in StreetView");
                     var coord5 = coord4.split(",");
                     window.destinationCoordX = coord5[0];
                     window.destinationCoordY = coord5[1];
                     window.destinationCoordZ = 200;
                 }
             } else if (currentService == "HEREMapCreator") {
-                console.log("Map Router - info - getting coordinates");
+                console.log("MAPPY - info - getting coordinates");
                 window.currentURL = window.location.href;
                 var coord1 = currentURL.split("editor/");
                 var coord2 = coord1[1];
@@ -291,7 +291,7 @@
                 window.destinationCoordZ = coord3[2];
             }
 
-            console.log("Map Router - info - coordinates: " + destinationCoordX + " / " + destinationCoordY + " / " + destinationCoordZ);
+            console.log("MAPPY - info - coordinates: " + destinationCoordX + " / " + destinationCoordY + " / " + destinationCoordZ);
 
             if (destinationService == "GoogleStreetView") {
                 if (destinationCoordZ == 21) {
@@ -356,9 +356,9 @@
             } else if (destinationService == "TwoGis") {
                 destinationURL = "https://2gis.ua/?m=" + destinationCoordY + "%2C" + destinationCoordX + "%2F" + destinationCoordZ;
             } else if (destinationService == "Support") {
-                destinationURL = "https://github.com/vchkhr/map-router";
+                destinationURL = "https://github.com/vchkhr/mappy";
             } else {
-                console.log("Map Router - error - destination service unknown");
+                console.log("MAPPY - error - destination service unknown");
             }
 
 			console.log("destinationURL: " + destinationURL);
